@@ -1,7 +1,5 @@
 package logger
 
-// Newpackage logger
-
 import (
 	"fmt"
 	"net/http"
