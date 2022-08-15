@@ -11,7 +11,7 @@ import (
 )
 
 // PublisherEvent will publish the specified event to the messaging system (currently running on localhost)
-func PublisherEvent(event events.Event, topic string) error {
+func PublishEvent(event events.Event, topic string) error {
 	log.WithField("event", event).Info("attempting to publish event")
 
 	p, err := kafka.NewProducer(&kafka.ConfigMap{

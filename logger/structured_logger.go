@@ -48,7 +48,9 @@ func (l *StructuredLogger) NewLogEntry(r *http.Request) middleware.LogEntry {
 
 	logFields["uri"] = fmt.Sprintf("%s://%s%s", scheme, r.Host, r.RequestURI)
 
-	entry.Logger = entry.Logger.WithFields("request started")
+	entry.Logger = entry.Logger.WithFields(logFields)
+
+	entry.Logger.Debugln("request started")
 
 	return entry
 }

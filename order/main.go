@@ -18,7 +18,7 @@ func init() {
 
 	// Output to stdout instead of the default stderr
 	// Can be any io.Writer, see below for File example
-	log.SetOutput(config.LogLevel())
+	log.SetOutput(os.Stdout)
 
 	// Only log the warning severity or above.
 	log.SetLevel(config.LogLevel())

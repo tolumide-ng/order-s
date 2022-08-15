@@ -19,6 +19,10 @@ func (or OrderReceived) ID() uuid.UUID {
 }
 
 // Name returns the name of the event
+func (or OrderReceived) Name() string {
+	return "OrderReceived"
+}
+
 func (or OrderReceived) Timestamp() time.Time {
 	return or.EventBase.EventTimestamp
 }

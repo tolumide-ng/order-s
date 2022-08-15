@@ -8,8 +8,8 @@ import (
 	"github.com/go-chi/chi/middleware"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/bpmericle/Asynchronous-Event-Handling-Using-Microservices-and-Kafka/milestone2/code/logger"
-	"github.com/bpmericle/Asynchronous-Event-Handling-Using-Microservices-and-Kafka/milestone2/code/order/internal/handlers"
+	"order-service/logger"
+	"order-service/order/internal/handlers"
 )
 
 type Server struct {
